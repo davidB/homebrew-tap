@@ -1,19 +1,25 @@
 class JsonSimpleObfuscator < Formula
   desc "A tool to partially hide json value (using unsecure pseudonimize / obfuscate algo)."
   homepage "https://github.com/davidB/json-simple-obfuscator"
-  version "0.2.4"
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.2.4/json-simple-obfuscator-aarch64-apple-darwin.tar.xz"
-    sha256 "6bb585a810e7cebfa583a7dc4df3f12fd352f0d3e66fbe419fb5f3a75d638636"
+  version "0.2.5"
+  if OS.mac?
+    if Hardware::CPU.arm?
+      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.2.5/json-simple-obfuscator-aarch64-apple-darwin.tar.xz"
+      sha256 "8800cc4061703c44975a215c26c00066fc8a062b99cfb7cc4b8785ada32b76bb"
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.2.5/json-simple-obfuscator-x86_64-apple-darwin.tar.xz"
+      sha256 "37caf7705c6b730d861bfa8213615562f161eb076dc1320e8661d850b7dd2f43"
+    end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.2.4/json-simple-obfuscator-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "bfde8f213226700877ceee397efacdf9269c19a39aa223c054ff007f4ea6b23c"
+      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.2.5/json-simple-obfuscator-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "af4c7353ad7d8289cc403c10781e0d2675e0e66a5194adff2a7448f95a1c793e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.2.4/json-simple-obfuscator-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ae866f574fb19faaa32a3344c1e31c221114ca46b05595e1f129f9640f7a6428"
+      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.2.5/json-simple-obfuscator-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a8eb043cb4a82a9ccb255cd44913fb2627d5e6155ea8369bcd64df7448b9a524"
     end
   end
   license "CC0-1.0"
@@ -21,6 +27,7 @@ class JsonSimpleObfuscator < Formula
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
+    "x86_64-apple-darwin":       {},
     "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
@@ -42,6 +49,7 @@ class JsonSimpleObfuscator < Formula
 
   def install
     bin.install "json-simple-obfuscator" if OS.mac? && Hardware::CPU.arm?
+    bin.install "json-simple-obfuscator" if OS.mac? && Hardware::CPU.intel?
     bin.install "json-simple-obfuscator" if OS.linux? && Hardware::CPU.arm?
     bin.install "json-simple-obfuscator" if OS.linux? && Hardware::CPU.intel?
 
