@@ -1,25 +1,25 @@
 class DioxusIconify < Formula
   desc "CLI tool for vendoring [Iconify](https://icon-sets.iconify.design/) icons (material, lucid, heroicons,....) in Dioxus projects"
   homepage "https://github.com/davidB/dioxus-iconify"
-  version "0.3.0"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/davidB/dioxus-iconify/releases/download/0.3.0/dioxus-iconify-aarch64-apple-darwin.tar.xz"
-      sha256 "2f0675f6d0da611df0fd7f00a658bac24f90bbdc372493fdcc082300faaead66"
+      url "https://github.com/davidB/dioxus-iconify/releases/download/0.4.0/dioxus-iconify-aarch64-apple-darwin.tar.xz"
+      sha256 "df790849ec4d270a8a83252f873356423ed51dfa442587a94baa01e716a8d221"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidB/dioxus-iconify/releases/download/0.3.0/dioxus-iconify-x86_64-apple-darwin.tar.xz"
-      sha256 "1749baa0bea2b3c3f3286f3a9df4835d992460827a211df5c326a983182b2e88"
+      url "https://github.com/davidB/dioxus-iconify/releases/download/0.4.0/dioxus-iconify-x86_64-apple-darwin.tar.xz"
+      sha256 "ded65f7e65dc3b4aa1f0314390489718b0aa3fe9feee2f2b8964b8adda370f8a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/davidB/dioxus-iconify/releases/download/0.3.0/dioxus-iconify-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "99f2da5e2876ec7d324a3f1a017d9227b89a25b07c53e65230ca3690e8cb9cc1"
+      url "https://github.com/davidB/dioxus-iconify/releases/download/0.4.0/dioxus-iconify-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0daf3727176acb7b6691dc21081fd672b39a352395974b0739f3de40204a652a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidB/dioxus-iconify/releases/download/0.3.0/dioxus-iconify-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "51847f3b8bb57c38bd15bb6fe6d707e860b02548e252c34a9c3c12ebe64cca57"
+      url "https://github.com/davidB/dioxus-iconify/releases/download/0.4.0/dioxus-iconify-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "9a00c065c1b3e5ee816c72da202276abc42acf88e5aca6e1ff96814746dca88c"
     end
   end
   license "CC0-1.0"
