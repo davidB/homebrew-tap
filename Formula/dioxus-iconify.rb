@@ -1,25 +1,25 @@
 class DioxusIconify < Formula
   desc "CLI tool for importing/vendoring icons from [Iconify](https://icon-sets.iconify.design/) (material, lucid, heroicons,....) or from local SVG files in Dioxus projects"
   homepage "https://github.com/davidB/dioxus-iconify"
-  version "0.4.1"
+  version "0.4.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/davidB/dioxus-iconify/releases/download/0.4.1/dioxus-iconify-aarch64-apple-darwin.tar.xz"
-      sha256 "c6cedac051a3b2de8d52e7ff08cb8083a654ac29286d950c31e0d36d2546399b"
+      url "https://github.com/davidB/dioxus-iconify/releases/download/0.4.2/dioxus-iconify-aarch64-apple-darwin.tar.xz"
+      sha256 "e9ffc94c464f5d94f84426bd6e007a1dc835526b8dfb4be0d57f1554a700a7ea"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidB/dioxus-iconify/releases/download/0.4.1/dioxus-iconify-x86_64-apple-darwin.tar.xz"
-      sha256 "97eee372a0ef4f8f660dba3823079ba733a784da82e866d0d039fa9b915e3351"
+      url "https://github.com/davidB/dioxus-iconify/releases/download/0.4.2/dioxus-iconify-x86_64-apple-darwin.tar.xz"
+      sha256 "a731ff289ceb2bae2aaf4f3f36f46b8ab44a4961577c1cad417bbff46196d1b5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/davidB/dioxus-iconify/releases/download/0.4.1/dioxus-iconify-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "458020ed3c76984de6f824d54edb0779a09e69825cfc1d35c7a1b85dd49aa959"
+      url "https://github.com/davidB/dioxus-iconify/releases/download/0.4.2/dioxus-iconify-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "496a338907b58639a23421424575d0bcccf0df5fc8e3272ed759ea81b9f8d26d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidB/dioxus-iconify/releases/download/0.4.1/dioxus-iconify-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3058ce3e0bd2ec49288c340bf936398e349de1820c88f509f37d9d799733ccf6"
+      url "https://github.com/davidB/dioxus-iconify/releases/download/0.4.2/dioxus-iconify-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "357a7b254e34676e1c339ceaa39a8673ed7a2ba3743bf6afad26bd4d0095bc25"
     end
   end
   license "CC0-1.0"
