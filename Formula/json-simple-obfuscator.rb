@@ -1,25 +1,25 @@
 class JsonSimpleObfuscator < Formula
   desc "A tool to partially hide json value (using unsecure pseudonimize / obfuscate algo)."
   homepage "https://github.com/davidB/json-simple-obfuscator"
-  version "0.2.5"
+  version "0.3.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.2.5/json-simple-obfuscator-aarch64-apple-darwin.tar.xz"
-      sha256 "8800cc4061703c44975a215c26c00066fc8a062b99cfb7cc4b8785ada32b76bb"
+      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.3.1/json-simple-obfuscator-aarch64-apple-darwin.tar.xz"
+      sha256 "4416476a2d3000a428c8116e50418598dde457c31546f9639c6e3391992a9446"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.2.5/json-simple-obfuscator-x86_64-apple-darwin.tar.xz"
-      sha256 "37caf7705c6b730d861bfa8213615562f161eb076dc1320e8661d850b7dd2f43"
+      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.3.1/json-simple-obfuscator-x86_64-apple-darwin.tar.xz"
+      sha256 "30463e79b32840051d137fb2f016d72b2d0658f1cd611ff6875ab197d798f11c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.2.5/json-simple-obfuscator-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "af4c7353ad7d8289cc403c10781e0d2675e0e66a5194adff2a7448f95a1c793e"
+      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.3.1/json-simple-obfuscator-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1b4cf9fcdab0afe055e93fdc8a0cffbd5b40a85d43fb77862d66864d9c6efef1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.2.5/json-simple-obfuscator-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a8eb043cb4a82a9ccb255cd44913fb2627d5e6155ea8369bcd64df7448b9a524"
+      url "https://github.com/davidB/json-simple-obfuscator/releases/download/0.3.1/json-simple-obfuscator-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b55c730e4fc3fe7ef40af83b34ce4d92217373e5f6101a5a7a166f98a0adab1e"
     end
   end
   license "CC0-1.0"
