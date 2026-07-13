@@ -1,25 +1,25 @@
 class TodoappCli < Formula
   desc "Keyboard-free CLI for tda (M3) — JSON output for agents and scripts"
   homepage "https://github.com/davidB/todoapp"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/davidB/todoapp/releases/download/0.2.0/todoapp-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "098844891c3c76d91406ad3f6376f6f392fcab466a011c8032fbe1a2726bf8b8"
+      url "https://github.com/davidB/todoapp/releases/download/0.3.0/todoapp-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "3cfd7a177def44a53ebd41cd36b7699d6a18ec16de7e84cb824e9743cac0d962"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidB/todoapp/releases/download/0.2.0/todoapp-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "ea10be54b5dc73f9d421408c75c1a7ae114e07e0d4e93766db479b49363b08eb"
+      url "https://github.com/davidB/todoapp/releases/download/0.3.0/todoapp-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "03ac3147f3bd9e759cc24282c6185fb65160aa7522819dbac6106354be1ca352"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/davidB/todoapp/releases/download/0.2.0/todoapp-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4a721fd5daee86ce294ba14ae76d12083acdec416776300d6636773b5ff613c2"
+      url "https://github.com/davidB/todoapp/releases/download/0.3.0/todoapp-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e10fd92c69f7b5bafb9a67c1e49d43877440699de5353b78c688029799af35a2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidB/todoapp/releases/download/0.2.0/todoapp-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "98a015444a01495b9ba3cd36faa77ec922861a70ea23e475832d6bd6ad4e12be"
+      url "https://github.com/davidB/todoapp/releases/download/0.3.0/todoapp-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4bf31a0fee53e0a3a1ea01c0664f02e99dcd068189742d657f81eb622d9e3c8b"
     end
   end
   license "Apache-2.0"
