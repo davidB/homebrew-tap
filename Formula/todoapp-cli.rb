@@ -1,25 +1,25 @@
 class TodoappCli < Formula
-  desc "Keyboard-free CLI for tda (M3) — JSON output for agents and scripts"
+  desc "Keyboard-first CLI + TUI for tda — capture, organize, and refine tasks, for humans and AI agents"
   homepage "https://github.com/davidB/todoapp"
-  version "0.4.0"
+  version "0.4.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/davidB/todoapp/releases/download/0.4.0/todoapp-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "e7ba87116e13cae4b2f782a71d1c95ea5ac0d689efaa1b9166533ecde4c14fca"
+      url "https://github.com/davidB/todoapp/releases/download/0.4.1/todoapp-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "95282fdc96e292b16504f71f458459b635a3fa06746d19a0fb23478821454f0d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidB/todoapp/releases/download/0.4.0/todoapp-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "9eb69c15b6b09d4baae24e0ee58c29aba56867a69814de4ad683b088842b2d6b"
+      url "https://github.com/davidB/todoapp/releases/download/0.4.1/todoapp-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "f5a49b1c475b5733f3ddd24a545f5ad8f71c6677c7c7434493fb2ea672c39981"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/davidB/todoapp/releases/download/0.4.0/todoapp-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7137451a9de9e0de7e888323dfb30743baa61f021698ce55dfaeeeef46de4276"
+      url "https://github.com/davidB/todoapp/releases/download/0.4.1/todoapp-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c0209dcd22fc2ba0560796f06f262e46f32c966f2bb836d4ef5e04f93cdcfb9a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidB/todoapp/releases/download/0.4.0/todoapp-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "dc0a15ad1aa2baffc46b977776802df70d2983d27d072bc61c5809259f219266"
+      url "https://github.com/davidB/todoapp/releases/download/0.4.1/todoapp-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c2c23e16885f8a9552b4f45a44b0ccd2e054af0e66eee27dbea29dcee4d6ddec"
     end
   end
   license "Apache-2.0"
