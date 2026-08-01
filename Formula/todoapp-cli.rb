@@ -1,25 +1,25 @@
 class TodoappCli < Formula
   desc "Keyboard-first CLI + TUI for tda — capture, organize, and refine tasks, for humans and AI agents"
   homepage "https://github.com/davidB/todoapp"
-  version "0.7.0"
+  version "0.7.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/davidB/todoapp/releases/download/0.7.0/todoapp-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "8f42a9d6f6ce48a9aec61e1769d98b2001b146ca070444a3955efec6a1ad20dd"
+      url "https://github.com/davidB/todoapp/releases/download/0.7.1/todoapp-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "5dea9b89a796e0f84b011248685d82262ed7490c9f471d9fb3e9a13a6e9f62f2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidB/todoapp/releases/download/0.7.0/todoapp-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "d5c6ca28a3c1b1accff9ce53b9dd1df4107c61b60606250b1b71f91a7667ce3e"
+      url "https://github.com/davidB/todoapp/releases/download/0.7.1/todoapp-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "e68b131179b2932298944ca7f03d750309d7b0164440d1c81100fb67e08b5657"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/davidB/todoapp/releases/download/0.7.0/todoapp-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0514839885360af70837c10174865a1574aaa943651b0576a3fc36155d695f4a"
+      url "https://github.com/davidB/todoapp/releases/download/0.7.1/todoapp-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e1b07c35f7c8753f807a5787bae540bb86138d89d2a1db3a5b9e6654979b6631"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/davidB/todoapp/releases/download/0.7.0/todoapp-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6e9c7f7811e21dd12fd2599543a43b956caa0f14ef1a2bb0cb084d24c7d6cbf5"
+      url "https://github.com/davidB/todoapp/releases/download/0.7.1/todoapp-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8d694a2f8a9ab9500e01197d4a86d8d88e58bd27ee1faf55d640f118a103b513"
     end
   end
   license "Apache-2.0"
